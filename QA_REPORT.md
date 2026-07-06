@@ -22,20 +22,17 @@ This contains an automated QA test suite built with **Playwright**. The goal is 
 
 ### The tests:
 
-* **Link Preview(Open Graph Tags):** This checks if the site has the hidden code needed to generate preview cards when shared.
-
-✅ Pass: Looks clean and professional on LinkedIn, Slack, or WhatsApp.
-❌ Fail: Renders as a boring, naked text link that doesn't invite clicks.
+* **Link Preview (Open Graph Tags):** This checks if the site has the hidden code needed to generate preview cards when shared.
+  * ✅ **Pass:** Looks clean and professional on LinkedIn, Slack, or WhatsApp.
+  * ❌ **Fail:** Renders as a boring, naked text link that doesn't invite clicks.
 
 * **Broken Link Guard:** This simulates clicking the main buttons to ensure they aren't dead ends.
-
-✅ Pass: Visitors can navigate smoothly everywhere.
-❌ Fail: Visitors click a project or resume button and hit a **"404 Not Found"** error.
+  * ✅ **Pass:** Visitors can navigate smoothly everywhere.
+  * ❌ **Fail:** Visitors click a project or resume button and hit a **"404 Not Found"** error.
 
 * **Contact Form Test:** Robot physically clicks and types in the contact box to make sure it isn't frozen.
-
-✅ Pass: Anyone can easily type and send a message through the portfolio.
-❌ Fail: The form locks up, blocking people from reaching out.
+  * ✅ **Pass:** Anyone can easily type and send a message through the portfolio.
+  * ❌ **Fail:** The form locks up, blocking people from reaching out.
 
 ### How to perform this test:
 1. Clone the repo and open it in the terminal
