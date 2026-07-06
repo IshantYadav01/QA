@@ -16,7 +16,6 @@ I manually tested the website on **Chrome, Safari, iPhone, Android, and iPad**.
 * **Buttons & Links:** All links go to the right places, and buttons work when clicked.
 * **Keyboard Tab Test:** Navigating the site using the `Tab` key works perfectly.
 
-
 ## ✅ Phase 2: Automatic Testing (Done)
 
 This contains an automated QA test suite built with **Playwright**. The goal is to run cross-browser infrastructure checks to make sure the portfolio looks professional, loads smoothly, and functions perfectly for recruiters.I perfomed the following tests for automatic tests:
@@ -24,14 +23,17 @@ This contains an automated QA test suite built with **Playwright**. The goal is 
 ### The tests:
 
 * **Link Preview(Open Graph Tags):** This checks if the site has the hidden code needed to generate preview cards when shared.
+
 ✅ Pass: Looks clean and professional on LinkedIn, Slack, or WhatsApp.
 ❌ Fail: Renders as a boring, naked text link that doesn't invite clicks.
 
 * **Broken Link Guard:** This simulates clicking the main buttons to ensure they aren't dead ends.
+
 ✅ Pass: Visitors can navigate smoothly everywhere.
 ❌ Fail: Visitors click a project or resume button and hit a **"404 Not Found"** error.
 
 * **Contact Form Test:** Robot physically clicks and types in the contact box to make sure it isn't frozen.
+
 ✅ Pass: Anyone can easily type and send a message through the portfolio.
 ❌ Fail: The form locks up, blocking people from reaching out.
 
@@ -56,13 +58,21 @@ View the interactive web report: `npx playwright show-report`
 
 ### 🔍 Quick Summary of the Screenshot Findings:
 ❌ Portfolio Core Quality Checks : Verify Open Graph Meta Tags for Clean Social Previews **Chromium**
+
 ❌ Portfolio Core Quality Checks : Verify Open Graph Meta Tags for Clean Social Previews **FireFox**
+
 ❌ Portfolio Core Quality Checks : Verify Open Graph Meta Tags for Clean Social Previews **webkit**
+
 ❌ Portfolio Core Quality Checks : Sanity Check Core Links to Avoid 404s **webkit**
+
 ✅ Portfolio Core Quality Checks : Sanity Check Core Links to Avoid 404s **Chromium**
+
 ✅ Portfolio Core Quality Checks : Sanity Check Core Links to Avoid 404s **FireFox**
+
 ✅ Portfolio Core Quality Checks : Contact Form Inputs are Responsive **FireFox**
+
 ✅ Portfolio Core Quality Checks : Contact Form Inputs are Responsive **Chromium**
+
 ✅ Portfolio Core Quality Checks : Contact Form Inputs are Responsive **WebKit**
 
 
